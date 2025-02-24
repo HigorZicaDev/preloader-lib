@@ -30,7 +30,7 @@
         var settings = Object.assign({
             preloaderSelector: "#preloader",
             loadingClass: "loading",
-            delay: 700,
+            delay: 600,
             fadeOutSpeed: 600 // em milissegundos
         }, options);
 

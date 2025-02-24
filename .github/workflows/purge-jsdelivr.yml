@@ -1,0 +1,13 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  purgeCache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr Cache
+        run: curl -X GET "https://purge.jsdelivr.net/gh/HigorZicaDev/preloader-lib/assets/js/preloader-lib.js"
