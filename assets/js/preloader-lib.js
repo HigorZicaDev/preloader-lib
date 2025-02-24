@@ -96,12 +96,14 @@
                 // Ocultar o preloader após um atraso
                 setTimeout(function() {
                     var preloader = document.querySelector(settings.preloaderSelector);
-                    preloader.style.opacity = '0';
+                    if (preloader) {
+                        preloader.style.opacity = '0';
 
-                    preloader.addEventListener('transitionend', function() {
-                        preloader.style.display = 'none';
-                        document.body.classList.remove(settings.loadingClass);
-                    });
+                        preloader.addEventListener('transitionend', function() {
+                            preloader.style.display = 'none';
+                            document.body.classList.remove(settings.loadingClass);
+                        });
+                    }
                 }, settings.delay);
             });
         };
