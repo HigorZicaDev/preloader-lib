@@ -9,7 +9,7 @@ Objetivo do projeto era criar um loader simples e super eficiente que pudesse se
 Não existe instalação você apenas precisa importar o CDN no seu arquivo HTML e Inicializar a biblioteca de pre-loader e adicionar a class="loading" ao element body do sua página.
 
 ```bash
-    <script src="https://cdn.jsdelivr.net/gh/username/preloader-lib/preloader-lib.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/username/preloader-lib/preloader.js"></script>
     <script>
         // Inicializar a biblioteca de preloader
         PreloaderLib.init();
@@ -31,7 +31,7 @@ Não existe instalação você apenas precisa importar o CDN no seu arquivo HTML
         <h1>Home Page</h1>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/HigorZicaDev/preloader-lib/assets/js/preloader-lib.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/HigorZicaDev/preloader-lib/assets/js/preloader.js"></script>
     <script>
         // Inicializar a biblioteca de preloader
         PreloaderLib.init();
